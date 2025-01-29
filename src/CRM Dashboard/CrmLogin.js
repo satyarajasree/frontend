@@ -43,7 +43,7 @@ const CrmLogin = () => {
         navigate("/dashboard"); // Redirect to dashboard after toast
       }, 3000);
     } catch (err) {
-      setError("Invalid credentials or server error");
+      setError("Invalid credentials");
       toast.error("Login failed! Please check your credentials.", {
         autoClose: 3000,
       });
